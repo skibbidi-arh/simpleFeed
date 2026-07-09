@@ -29,7 +29,7 @@ app.include_router(fastapi_users.get_users_router(UserRead, UserUpdate), prefix=
 async def upload_file(
         file: UploadFile = File(...),
         caption: str = Form(""),
-        user: User = Depends(curernt_active_user),
+        user: User = Depends(current_active_user),
         session: AsyncSession = Depends(get_async_session)
 ):
     temp_file_path = None
