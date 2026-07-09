@@ -33,7 +33,7 @@ async def get_post(id: int):
     
     
 @app.post("/posts")
-def create_post(post: PostCreate):
+def create_post(post: PostCreate) -> PostCreate:
     new_id = max(text_posts.keys()) + 1
     text_posts[new_id] = {"title": post.title, "content": post.content}
     return {"id": new_id, "title": post.title, "content": post.content}
