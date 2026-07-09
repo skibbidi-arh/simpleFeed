@@ -1,0 +1,33 @@
+# Python compilation artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments and Package Managers
+.venv/
+venv/
+ENV/
+env/
+.project_automation/
+
+# Astral 'uv' cache
+.uv/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Local configuration / Sensitive Data
+.env
+*.local
+data/
